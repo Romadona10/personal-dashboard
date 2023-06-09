@@ -1,0 +1,28 @@
+<div class="edit-todo-wrapper container">
+    <h2>Edit Todo</h2>
+<form #b="ngForm"(ngSubmit)="onSubmit(b)">
+<div class="form-group">
+    <textarea class="textbox" placeholder="Enter Note content..."
+    class="form-control" name="text" ngModel #text="ngModel"
+    required
+    [ngClass]="{'is-invalid':text.touched&&text.invalid}"
+    >
+    
+</textarea>
+<div *ngIf="text.errors?.['required']">
+    <div class="alert alert-danger" *ngIf="text.touched&&text.invalid">Todo Content Needed</div>
+</div>
+<div class="button-container">
+    <a 
+         routerLink="../" class="btn btn-secondary">
+             cancel
+         </a>
+        
+         <button class="btn btn-primary" [disabled]="b.invalid">Create</button>
+  </div>
+</div>
+</form>
+</div>
+
+
+

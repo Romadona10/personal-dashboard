@@ -1,0 +1,29 @@
+<div class="app-wrapper">
+
+  <img [src]="bg" class="bg-img">
+
+  <div class="switch" (click)="changeBGimage()">
+    <i class="material-icons-outlined">refresh</i>
+  </div>
+
+
+  <div class="top-section">
+    <h1>{{date | date: 'shortTime'}}</h1>
+    <h2>{{date | date}}</h2>
+  </div>
+  
+  
+  <div class="content-section">
+  
+     <router-outlet></router-outlet>
+     
+    
+  </div>
+
+  <div class="bottom-section">
+    <app-tabs></app-tabs>
+  </div>
+
+</div>
+
+

@@ -1,0 +1,41 @@
+.notes-wrapper{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.notes-card{
+    background-color: rgb(14, 13, 13);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+.notes-card:hover{
+    background-color:#332C39 ;
+    backdrop-filter: blur(2px);
+}
+.notes-card-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+.notes-card-content{
+    margin-top: 2px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-weight: 600;
+    align-items: center;
+}
+i{
+    font-size: 18px;
+}
+
+span{
+    display: flex;
+    margin-left: auto;
+    color: red;
+}

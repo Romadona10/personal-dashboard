@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="todos-item " [class.completed]="todo.completed">
+        <div class="check-box">
+            <i class="material-icons-outlined">check</i>
+        </div>
+        <p>{{todo.text}}</p>
+        <div class="todo-item-action">
+            <div (click)="onEdit()">
+                <i class="material-icons">edit</i>
+            </div>
+            <div (click)="onRemove()">
+                <i class="material-icons">delete</i>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,16 @@
+.todos-wrapper{
+    height: 100%;
+    overflow-y: auto;
+}
+.todo-add{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: rgb(74, 69, 69);
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}

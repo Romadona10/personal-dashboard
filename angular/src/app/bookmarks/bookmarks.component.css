@@ -1,0 +1,39 @@
+.bookmarks-wrapper{
+    height: 100%;
+    overflow: auto;
+    
+}
+.bookmarks-tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(70, 69, 69,0.5);
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    flex-direction: column;
+
+}
+.bookmarks-tile:hover{
+    background-color: rgba(white);
+}
+.bookmarks-tile:active{
+    transform: translateY(3px);
+}
+.bookmarks-tile-container{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bookmarks-img{
+    max-width: 32px;
+}
+p{
+    color: white;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

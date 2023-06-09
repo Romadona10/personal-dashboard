@@ -1,0 +1,21 @@
+<div class="notes-wrapper">
+    <div class="container">
+        <div class="notes-list">
+            <div class="notes-card" *ngFor="let use of user; let index=index">
+                <div class="notes-card-title">{{use.title}}</div>
+                    <div class="notes-card-content">{{use.content}}</div>
+                    
+                             <span class="material-icons-outlined"(click)="onDelete(index)">delete</span>
+                    
+                </div>
+                <div class="btn-container">
+                    <a  routerLink="add" class="btn btn-primary">
+                        Add
+                        <i class="material-icons-outlined">add</i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+

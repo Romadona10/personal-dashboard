@@ -1,0 +1,17 @@
+<div class="todos wrapper">
+    <div class="container">
+
+        <app-todo-item 
+        *ngFor="let todo of todo"
+         [todo]="todo"
+         (edit)="onEdit(todo)"
+         (remove)="onRemove(todo)">
+    </app-todo-item>
+        
+        
+        <div class="todo-add">
+            <button routerLink="add">Add</button>
+        </div>
+    </div>
+</div>
+
